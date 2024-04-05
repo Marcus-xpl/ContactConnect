@@ -1,0 +1,58 @@
+*{
+
+    margin: 0;
+    padding: 1;
+    box-sizing: border-box;
+    list-style: none;                
+    text-decoration: none;
+    font-family: sans-serif;
+    }
+    body{
+    
+        background-color: rgb(107, 103, 103);
+    
+    }
+    form{
+
+  margin-top: 55px;
+  align-items: center;
+  margin-left: 25px;
+
+    }
+    h2{
+
+        margin-top: 60px;
+        margin-left: 25px;
+        font-family: georgia;
+    }
+    h3{
+
+        margin-top: 35px;
+        align-items: center;
+        margin-left: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h4{
+   
+        margin-top: 15px;
+        margin-left: 35px;
+        color: #f0e2e2;
+
+    }
+    label{
+
+        font-family: georgia,times;
+        color: #000000;
+    }
+    #btn{
+
+        margin-top: 14px;
+        margin-left: 20px;
+        padding: 5px 5px;
+        background: #3b7ab9;
+        border-radius: 20px;
+        color: #ffffff;
+        font-size: 15px;
+        transition: all 0.4s;
+    }
+

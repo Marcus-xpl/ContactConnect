@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="Logo.png.png" type="image/x-icon">
+    <title>Cadastro para compras </title>
+    <h2>Apple Inc.</h2>
+    <h3>Cadrastro pessoal para compras, iremos te retorna e enviar o nosso catalogo de produtos.</h3>
+    <h4>Atenção: preencha todas as informações necessarias.</h4>
+    <h4>O cadastro irá enviar, se os campos tiver corretos.</h4>
+</head>
+<body>
+<form action="exemplo1.jsp" name="form1">
+<label for="txtNome">Nome:</label>
+<input type="textNome" placeholder="Digite seu nome" name="txtNome" id="txtNome">
+   <span id = "erroNome"></span>
+<br/>
+<br/>
+<label for="txtSobrenome">Sobrenome:</label>
+<input type="textSobrenome" placeholder="Digite seu sobrenome" name="txtSobrenome" id="txtSobrenome">
+   <span id = "erroSobrenome"></span>
+<br/>
+<br/>
+<label for="txtNumero">Numero:</label>
+<input type="textNumero" placeholder="Digite seu telefone" name="txtNumero" id="txtNumero">
+   <span id = "erroNumero"></span>
+<br/>
+<br/>
+<label for="txtEmail">Email:</label>
+<input type="text" placeholder="Digite seu E-mail" name="txtEmail" id="txtEmail">
+    <span id = "erroEmail"></span>
+<br/>
+<br>
+<input type="button" value="Cadastrar" onclick="verificar()">
+</form>
+     <script>
+function limpar(){
+    document.getElementById("txtNome").style.backgroundColor = "white";
+    document.getElementById("txtSobrenome").style.backgroundColor = "white";
+    document.getElementById("txtNumero").style.backgroundColor = "white";
+    document.getElementById("txtEmail").style.backgroundColor = "white";
+
+    document.querySelector("#erroNome").textContent = ""
+    document.querySelector("#erroSobrenome").textContent = "" 
+    document.querySelector("#erroNumero").textContent = ""
+    document.querySelector("#erroEmail").textContent = ""
+}
+
+function verificar(){
+
+limpar();
+var enviar = true ;
+var nome = document.getElementById("txtNome").value;
+            
+if( nome.length == 0 ){
+enviar = false;
+
+document.getElementById("txtNome").style.backgroundColor = "yellow";  
+document.querySelector("#erroNome").textContent = "incorreto."
+}
+
+var sobrenome = document.getElementById("txtSobrenome").value;
+            
+if( sobrenome.length == 0 ){
+enviar = false;
+
+document.getElementById("txtSobrenome").style.backgroundColor = "yellow";
+document.querySelector("#erroSobrenome").textContent = "incorreto."  
+}
+
+ var numero = document.getElementById("txtNumero").value;
+            
+if( numero.length == 0 || isNaN(numero) ){
+enviar = false;
+                
+document.getElementById("txtNumero").style.backgroundColor = "yellow"; 
+document.querySelector("#erroNumero").textContent = "incorreto." 
+}
+
+var email = document.getElementById("txtEmail").value;
+
+if(email.indexOf("@") < 0  ){
+enviar = false;
+               
+document.getElementById("txtEmail").style.backgroundColor = "yellow";
+document.querySelector("#erroEmail").textContent = "incorreto."
+}
+         
+if(enviar){
+   document.form1.submit(); 
+}
+}
+
+    </script>
+</body>
+</html>

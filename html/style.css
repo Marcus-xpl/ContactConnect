@@ -1,0 +1,149 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;                
+    text-decoration: none;
+    font-family: sans-serif;
+    }
+body{
+
+background-color: rgb(107, 103, 103);
+
+}
+header{
+
+padding: 10px 38px;
+background-color: #4e4e4e;
+
+}
+.navegação{
+    
+   display: flex;
+    align-items: auto;
+    justify-content: space-between;
+}
+.Logo{
+
+    width: 40px;
+}
+.navegação ul{
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.navegação ul li a{
+font-size: 13.2px;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.navegação ul li a:hover{
+
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.navegação .check{
+
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+ 
+/*MAIN*/
+main section{
+
+  
+    align-items: center;
+    justify-content: space-between;         
+    padding: 20.3px; 
+    
+}
+.pngi{
+
+    margin-top: -455px;
+    margin-left: 722px;
+  
+}
+
+.iphone13{
+    height: auto;
+    width: 155px;
+    margin-top: 40px;
+}
+
+h3{
+color: #000;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: auto;
+    margin-top: 16.5px;
+    margin-bottom: 1rem;
+}
+p{
+    box-shadow: inset;
+    font-size: auto;
+    margin-top: -5px;
+}
+h6{
+
+color: #e9d3d3;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 16px;
+margin-bottom: 2rem;
+margin-top: 10px;
+}
+.btm{
+
+    padding: 10px 20px;
+    background: #207dda;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 17px;
+    transition: all 0.4s;
+}
+.btm:hover{
+
+    opacity: .85;
+    color: rgb(230, 230, 230);
+    background-color: #3b4886;
+}
+h5{
+
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    margin-top: 26px;
+    margin-bottom: 2rem;
+}
+.content{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.content span{
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #000000;
+    transition: all 0.5s;
+}
+.content span:hover{
+
+    opacity: .80;
+}
+#branco{
+    background: #fff;
+}
+#preto{
+     background: black;
+}
+#dourado{
+    background: #ffec7f;
+}
+#azul{
+    background: #1c2961;
+}
